@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   distDir: "out", // Output directory for static export
+  output: "export", // Enable static export
   images: {
     domains: [
       "source.unsplash.com",

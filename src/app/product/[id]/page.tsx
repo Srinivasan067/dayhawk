@@ -2,6 +2,21 @@ import Image from "next/image"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight, Heart, Share2, Star, Camera, ThumbsUp, ThumbsDown } from "lucide-react"
 
+export async function generateStaticParams() {
+  // Replace this with your actual data fetching logic
+  const products = [
+    { id: "seer-fish" },
+    { id: "black-pomfret" },
+    { id: "sea-prawn" },
+    { id: "indian-salmon" },
+    { id: "squid" },
+  ];
+
+  return products.map((product) => ({
+    id: product.id,
+  }));
+}
+
 export default function ProductDetail({ params }: { params: { id: string } }) {
 
   const product = {
