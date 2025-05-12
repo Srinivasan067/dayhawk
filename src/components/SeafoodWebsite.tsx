@@ -15,6 +15,8 @@ const e1 = "/Website Source Files/img1.jpg";
 const e2 = "/Website Source Files/img2.jpg";
 const f1 = "/Website Source Files/seer.jpg";
 const f2 = "/Website Source Files/black.jpg";
+import payment from "@publicImages/payment.png";
+
 const f3 = "/Website Source Files/prawn.jpg";
 
 
@@ -603,10 +605,8 @@ export default function SeafoodWebsite() {
               </button>
             </div>
             <div className="mt-4 flex gap-2">
-              <Image src="/placeholder.svg?height=30&width=40" alt="Visa" width={40} height={30} />
-              <Image src="/placeholder.svg?height=30&width=40" alt="Mastercard" width={40} height={30} />
-              <Image src="/placeholder.svg?height=30&width=40" alt="PayPal" width={40} height={30} />
-              <Image src="/placeholder.svg?height=30&width=40" alt="American Express" width={40} height={30} />
+              <Image src={payment} alt="Visa" width={290} height={160} />
+
             </div>
           </div>
         </div>
