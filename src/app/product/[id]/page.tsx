@@ -1,6 +1,22 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight, Heart, Share2, Star, Camera, ThumbsUp, ThumbsDown } from "lucide-react"
+import logo from "@publicImages/BayHawk.svg";
+import img1 from "@publicImages/sample/2.jpg";
+import img2 from "@publicImages/sample/3.jpg";
+import img3 from "@publicImages/sample/4.jpg";
+import img4 from "@publicImages/sample/5.jpg";
+import img5 from "@publicImages/sample/6.jpg";
+import img6 from "@publicImages/sample/8.jpg";
+
+import img7 from "@publicImages/sample/9.jpg";
+
+import img8 from "@publicImages/sample/11.jpg";
+import img9 from "@publicImages/sample/12.jpg";
+import payment from "@publicImages/payment.png";
+
+
+
 
 export async function generateStaticParams() {
   // Replace this with your actual data fetching logic
@@ -35,7 +51,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
     pieces: "2-4 Pieces",
     serves: "2-3",
     totalPrice: 3355.0,
-    images: ["/placeholder.svg?height=400&width=500"],
+    images: [img1],
     variants: [
       { id: 1, name: "Whole Uncleaned - Small", isActive: false },
       { id: 2, name: "Small Fish - 1 Kg to 1.25 Kg", isActive: true },
@@ -58,9 +74,10 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       likes: 143,
       dislikes: 10,
       images: [
-        "/placeholder.svg?height=80&width=80",
-        "/placeholder.svg?height=80&width=80",
-        "/placeholder.svg?height=80&width=80",
+            img1,
+            img2,
+            img3
+
       ],
     },
     {
@@ -84,9 +101,9 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       likes: 83,
       dislikes: 3,
       images: [
-        "/placeholder.svg?height=80&width=80",
-        "/placeholder.svg?height=80&width=80",
-        "/placeholder.svg?height=80&width=80",
+        img4,
+            img5,
+            img6
       ],
     },
   ]
@@ -105,7 +122,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img1,
     },
     {
       id: 2,
@@ -119,7 +136,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img2,
     },
     {
       id: 3,
@@ -133,7 +150,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img3,
     },
     {
       id: 4,
@@ -147,7 +164,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img4,
     },
     {
       id: 5,
@@ -161,7 +178,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img5,
     },
   ]
 
@@ -179,7 +196,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img6,
     },
     {
       id: 7,
@@ -193,7 +210,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img7,
     },
     {
       id: 8,
@@ -207,7 +224,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img8,
     },
     {
       id: 9,
@@ -221,7 +238,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img9,
     },
     {
       id: 10,
@@ -235,7 +252,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       serves: "4",
       rating: 4,
       reviewCount: 145,
-      image: "/placeholder.svg?height=200&width=200",
+      image:img1,
     },
   ]
 
@@ -248,8 +265,8 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
             <div className="flex items-center">
               <Link href="/" className="mr-8">
                 <Image
-                  src="/placeholder.svg?height=40&width=150"
-                  alt="BayHawk"
+                  src={logo}
+                  alt="DayHawk"
                   width={150}
                   height={40}
                   className="h-10 w-auto"
@@ -757,15 +774,15 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
         <div className="relative overflow-hidden rounded-lg bg-[#0a2d5c] p-6 text-white">
           <div className="relative z-10 flex flex-col items-center justify-center gap-4 py-4 text-center">
             <h2 className="text-3xl font-bold">Get 15% offer! Min Order of 350₹</h2>
-            <div className="rounded-md border border-dashed border-white px-4 py-2">Use Code : bayhawk786</div>
+            <div className="rounded-md border border-dashed border-white px-4 py-2">Use Code : dayhawk786</div>
           </div>
           <div className="absolute inset-0">
-            <Image
+            {/* <Image
               src="/placeholder.svg?height=200&width=1200"
               alt="Seafood promotion"
               fill
               className="object-cover opacity-40"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -775,7 +792,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
         <div className="container mx-auto">
           <div className="grid gap-8 md:grid-cols-4">
             <div>
-              <h2 className="mb-6 text-2xl font-bold">BayHawk</h2>
+              <h2 className="mb-6 text-2xl font-bold">DayHawk</h2>
               <p className="mb-4 max-w-xs">
                 Your trusted source for fresh, sustainable seafood delivered right to your door.
               </p>
@@ -873,10 +890,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
               </button>
             </div>
             <div className="mt-4 flex gap-2">
-              <Image src="/placeholder.svg?height=30&width=40" alt="Visa" width={40} height={30} />
-              <Image src="/placeholder.svg?height=30&width=40" alt="Mastercard" width={40} height={30} />
-              <Image src="/placeholder.svg?height=30&width=40" alt="PayPal" width={40} height={30} />
-              <Image src="/placeholder.svg?height=30&width=40" alt="American Express" width={40} height={30} />
+              <Image src={payment} alt="Visa" width={290} height={160} />
             </div>
           </div>
         </div>

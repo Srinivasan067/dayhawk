@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --turbopack",
     "build": "cross-env SKIP_TYPESCRIPT_CHECK=1 next build", 
-    "export": "next build && next export",
+        "export": "next build && next export && node copy-public.js", 
+
     "start": "next start",
     "lint": "next lint"
   },

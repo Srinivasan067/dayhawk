@@ -1,12 +1,22 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import p1 from "@publicImages/Peoples/1.jpg";
-import p2 from "@publicImages/Peoples/2.jpg";
-import p3 from "@publicImages/Peoples/3.jpg";
-import b1 from "@publicImages/Banners/OfferBanner.jpg";
-import b2 from "@publicImages/Banners/BestforyourHealth.jpg";
-import d1 from "@publicImages/Other Images/Crab.png";
+
+
+
+
+const p1 = "/Website Source Files/Peoples/1.jpg";
+const p2 = "/Website Source Files/Peoples/2.jpg";
+const p3 = "/Website Source Files/Peoples/3.jpg";
+const b1 = "/Website Source Files/Banners/OfferBanner.jpg";
+const b2 = "/Website Source Files/Banners/BestforyourHealth.jpg";
+const d1 = "/Website Source Files/other/Crab.png";
+const e1 = "/Website Source Files/img1.jpg";
+const e2 = "/Website Source Files/img2.jpg";
+const f1 = "/Website Source Files/seer.jpg";
+const f2 = "/Website Source Files/black.jpg";
+const f3 = "/Website Source Files/prawn.jpg";
+
 
 export default function SeafoodWebsite() {
   // Sample products data for the homepage
@@ -18,7 +28,7 @@ export default function SeafoodWebsite() {
       price: 393,
       mrp: 415,
       discount: "5% off",
-      image: "/placeholder.svg?height=200&width=200",
+      image: f1,
     },
     {
       id: "black-pomfret",
@@ -27,7 +37,7 @@ export default function SeafoodWebsite() {
       price: 340,
       mrp: 357,
       discount: "5% off",
-      image: "/placeholder.svg?height=200&width=200",
+      image: f2,
     },
     {
       id: "sea-prawn",
@@ -36,7 +46,7 @@ export default function SeafoodWebsite() {
       price: 209,
       mrp: 220,
       discount: "5% off",
-      image: "/placeholder.svg?height=200&width=200",
+      image: f3,
     },
   ]
 
@@ -50,23 +60,24 @@ export default function SeafoodWebsite() {
             <div className="relative z-10 flex flex-col gap-4">
               <div className="absolute right-4 top-4 rounded-full bg-green-500 px-3 py-1 text-sm font-bold">50%</div>
               <div className="absolute right-4 top-12 rounded-full bg-green-500 px-3 py-1 text-sm font-bold">
-                50% offer
+           
               </div>
               <h2 className="text-4xl font-bold leading-tight">
-                Best <br />
-                Seafood <br />
-                <span className="text-2xl">in Town</span>
+          <br />
+            <br />
+                <span className="text-2xl"></span>
               </h2>
               <Link
                 href="/product/seer-fish"
                 className="flex w-fit items-center gap-2 rounded-md bg-white px-4 py-2 font-medium text-[#0a2d5c] transition-colors hover:bg-gray-100"
               >
-                Order Now <ChevronRight className="h-4 w-4" />
+             <ChevronRight className="h-4 w-4" />
               </Link>
             </div>
             <div className="absolute inset-0">
+              
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={e1}
                 alt="Salmon with herbs"
                 fill
                 className="object-cover opacity-60"
@@ -79,23 +90,23 @@ export default function SeafoodWebsite() {
           <div className="relative overflow-hidden rounded-lg bg-[#0a2d5c] p-6 text-white">
             <div className="relative z-10 flex flex-col gap-4">
               <div className="absolute right-4 top-4 rounded-full bg-[#0a2d5c] px-3 py-1 text-sm font-bold">
-                50% OFF
+            
               </div>
               <h2 className="text-4xl font-bold leading-tight">
-                <span className="text-2xl italic">Flavourful</span> <br />
-                FRESH FISH
+                <span className="text-2xl italic"></span> <br />
+               
               </h2>
               <Link
                 href="/product/seer-fish"
                 className="flex w-fit items-center gap-2 rounded-md bg-white px-4 py-2 font-medium text-[#0a2d5c] transition-colors hover:bg-gray-100"
               >
-                Order Now <ChevronRight className="h-4 w-4" />
+               <ChevronRight className="h-4 w-4" />
               </Link>
             </div>
             <div className="absolute inset-0">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Fresh fish dish"
+                src={e2}
+                alt="Salmon with herbs"
                 fill
                 className="object-cover opacity-60"
                 priority
@@ -173,7 +184,7 @@ export default function SeafoodWebsite() {
             </div>
             <div className="absolute -bottom-16 -right-16 hidden md:block">
               <Image
-                src="/placeholder.svg?height=150&width=150"
+                src={d1}
                 alt="Decorative lobster"
                 width={150}
                 height={150}
@@ -379,7 +390,7 @@ export default function SeafoodWebsite() {
           <div className="relative overflow-hidden rounded-lg bg-[#0a2d5c] p-6 text-white">
             <div className="relative z-10 flex flex-col items-center justify-center gap-4 py-4 text-center">
               <h2 className="text-3xl font-bold">Get 15% offer! Min Order of 350₹</h2>
-              <div className="rounded-md border border-dashed border-white px-4 py-2">Use Code : bayhawk786</div>
+              <div className="rounded-md border border-dashed border-white px-4 py-2">Use Code : dayhawk786</div>
             </div>
             <div className="absolute inset-0">
               <Image
@@ -494,7 +505,7 @@ export default function SeafoodWebsite() {
         <div className="container mx-auto">
           <div className="grid gap-8 md:grid-cols-4">
             <div>
-              <h2 className="mb-6 text-2xl font-bold">BayHawk</h2>
+              <h2 className="mb-6 text-2xl font-bold">DayHawk</h2>
               <p className="mb-4 max-w-xs">
                 Your trusted source for fresh, sustainable seafood delivered right to your door.
               </p>

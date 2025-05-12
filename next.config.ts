@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
       "source.unsplash.com",
       "images.unsplash.com",
       "web-assets.same.dev",
+      "asset.cloudinary.com",
+      "res.cloudinary.com",
+      "tuttobene.in",
+      "drive.google.com",
+      "images.squarespace-cdn.com"
     ],
     remotePatterns: [
       {
