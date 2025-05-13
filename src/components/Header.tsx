@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import logo from "@publicImages/BayHawk.svg";
 import {
   Search,
   Heart,
@@ -29,8 +30,13 @@ export function Header() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <div className="text-2xl font-bold text-[#4e95c3] mr-1">Day</div>
-          <div className="text-2xl font-bold text-[#e97f7f]">Hawk</div>
+          <Image
+                            src={logo}
+                            alt="DayHawk"
+                            width={150}
+                            height={40}
+                            className="h-10 w-auto"
+                          />
         </Link>
 
         {/* Mobile Menu */}

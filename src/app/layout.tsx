@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
+import logo from "@publicImages/BayHawk.svg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DayHawk - Fresh Seafood Delivery",
+  title: "BayHawak - Fresh Seafood Delivery",
   description: "Premium quality seafood delivered to your doorstep. Daily fresh catches, expert quality checks, and chemical-free products.",
   icons: {
     icon: [
@@ -26,8 +27,8 @@ export const metadata: Metadata = {
   },
   keywords: ["seafood", "delivery", "fresh fish", "premium seafood", "food delivery", "DayHawk"],
   authors: [{ name: "DayHawk Inc." }],
-  creator: "DayHawk Inc.",
-  publisher: "DayHawk Inc.",
+  creator: "BayHawk Inc.",
+  publisher: "BayHawk Inc.",
 };
 
 export default function RootLayout({

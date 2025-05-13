@@ -392,7 +392,7 @@ export default function SeafoodWebsite() {
           <div className="relative overflow-hidden rounded-lg bg-[#0a2d5c] p-6 text-white">
             <div className="relative z-10 flex flex-col items-center justify-center gap-4 py-4 text-center">
               <h2 className="text-3xl font-bold">Get 15% offer! Min Order of 350₹</h2>
-              <div className="rounded-md border border-dashed border-white px-4 py-2">Use Code : dayhawk786</div>
+              <div className="rounded-md border border-dashed border-white px-4 py-2">Use Code : Bayhawk786</div>
             </div>
             <div className="absolute inset-0">
               <Image
@@ -507,7 +507,7 @@ export default function SeafoodWebsite() {
         <div className="container mx-auto">
           <div className="grid gap-8 md:grid-cols-4">
             <div>
-              <h2 className="mb-6 text-2xl font-bold">DayHawk</h2>
+              <h2 className="mb-6 text-2xl font-bold">BayHawk</h2>
               <p className="mb-4 max-w-xs">
                 Your trusted source for fresh, sustainable seafood delivered right to your door.
               </p>
